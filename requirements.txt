@@ -6,8 +6,6 @@ shap==0.37.0
 xgboost==1.2.1
 nltk==3.5
 textblob==0.15.3
-pip install textblob
-python -m textblob.download_corpora 
 
 
 
