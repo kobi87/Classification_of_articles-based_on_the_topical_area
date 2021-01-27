@@ -1,2 +1,3 @@
 stopwords
 wordnet
+textblob.download_corpora 
