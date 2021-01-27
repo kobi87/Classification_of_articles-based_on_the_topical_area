@@ -9,11 +9,11 @@ import string
 # stop words
 import nltk
 from nltk.corpus import stopwords
-nltk.download("stopwords")
-import textblob
-from textblob import TextBlob
+#nltk.download("stopwords")
+#import textblob
+#from textblob import TextBlob
 from nltk.stem import WordNetLemmatizer
-nltk.download('wordnet')
+#nltk.download('wordnet')
 
 #=========================
 
@@ -49,7 +49,7 @@ def nettoyer_text(df):
     #Lemmatizer avec Tokenisation
     lemmatizer = WordNetLemmatizer()
     df['text_tok_lim'] = df['text_nettoyer'].map(lambda x: 
-                                                 " ".join(lemmatizer.lemmatize(mot) for mot in TextBlob(x).words))
+                                                 " ".join(lemmatizer.lemmatize(mot) for mot in x.split()))
     return df
 #===========================
 
