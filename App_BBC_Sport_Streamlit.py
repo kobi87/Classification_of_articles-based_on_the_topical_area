@@ -7,11 +7,10 @@ from PIL import Image
 import re
 import string
 # stop words
-from nltk.corpus import stopwords
 import nltk
+from nltk.corpus import stopwords
 #nltk.download("stopwords")
 from textblob import TextBlob
-import nltk
 from nltk.stem import WordNetLemmatizer
 #nltk.download('wordnet')Text
 
