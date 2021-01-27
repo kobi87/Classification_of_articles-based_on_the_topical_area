@@ -10,6 +10,7 @@ import string
 import nltk
 from nltk.corpus import stopwords
 #nltk.download("stopwords")
+import textblob
 from textblob import TextBlob
 from nltk.stem import WordNetLemmatizer
 #nltk.download('wordnet')
